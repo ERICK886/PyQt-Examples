@@ -1,0 +1,1847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Index</class>
+ <widget class="QWidget" name="Index">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1120</width>
+    <height>740</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1120</width>
+    <height>740</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1120</width>
+    <height>740</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color: white;
+
+}</string>
+   </property>
+   <widget class="QLabel" name="label_logo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>241</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_link">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>0</y>
+      <width>201</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+      <pointsize>-1</pointsize>
+      <weight>7</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+    background-color: transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>0</y>
+      <width>621</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 40px;
+	color: #C32E24;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;OpenStack&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>161</width>
+     <height>681</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+	background-color: white;
+}</string>
+   </property>
+   <widget class="QPushButton" name="pushButton_image">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>150</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: white;
+	color: #C32E24;
+	border: 1px solid white;
+
+}
+
+QPushButton:hover {
+	background-color: #C32E24;
+	color: white;
+}
+
+QPushButton:focus {
+	border-left: 10px solid white;
+	background-color: #C32E24;
+	color: white
+}</string>
+    </property>
+    <property name="text">
+     <string>镜像</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_server">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>200</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: white;
+	color: #C32E24;
+	border: 1px solid white;
+
+}
+
+QPushButton:hover {
+	background-color: #C32E24;
+	color: white;
+}
+
+QPushButton:focus {
+	border-left: 10px solid white;
+	background-color: #C32E24;
+	color: white
+}</string>
+    </property>
+    <property name="text">
+     <string>云主机</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_network">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: white;
+	color: #C32E24;
+	border: 1px solid white;
+
+}
+
+QPushButton:hover {
+	background-color: #C32E24;
+	color: white;
+}
+
+QPushButton:focus {
+	border-left: 10px solid white;
+	background-color: #C32E24;
+	color: white
+}</string>
+    </property>
+    <property name="text">
+     <string>网络</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_user">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: white;
+	color: #C32E24;
+	border: 1px solid white;
+
+}
+
+QPushButton:hover {
+	background-color: #C32E24;
+	color: white;
+}
+
+QPushButton:focus {
+	border-left: 10px solid white;
+	background-color: #C32E24;
+	color: white
+}</string>
+    </property>
+    <property name="text">
+     <string>用户</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_flavor">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>250</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: white;
+	color: #C32E24;
+	border: 1px solid white;
+
+}
+
+QPushButton:hover {
+	background-color: #C32E24;
+	color: white;
+}
+
+QPushButton:focus {
+	border-left: 10px solid white;
+	background-color: #C32E24;
+	color: white
+}</string>
+    </property>
+    <property name="text">
+     <string>云主机类型</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_api">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: white;
+	color: #C32E24;
+	border: 1px solid white;
+
+}
+
+QPushButton:hover {
+	background-color: #C32E24;
+	color: white;
+}
+
+QPushButton:focus {
+	border-left: 10px solid white;
+	background-color: #C32E24;
+	color: white
+}</string>
+    </property>
+    <property name="text">
+     <string>API</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>60</y>
+     <width>961</width>
+     <height>681</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color: white;
+}</string>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-1</y>
+      <width>961</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="stack_api">
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>951</width>
+        <height>671</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget {border: none;font: 57 9pt &quot;HarmonyOS Sans SC&quot;;}
+QHeaderView::section {font: 57 9pt &quot;HarmonyOS Sans SC&quot;;}
+QHeaderView::section::hover{background-color: #C32E24; color:white;border: none;}
+QTableWidget::item
+{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+    height:35px;
+    font-size:20px;
+}
+ 
+QTableWidget::item::hover
+{
+    background-color: #C32E24;
+color:white
+}
+ 
+QTableWidget::item:selected
+{
+    background: #C32E24;
+}
+
+
+QScrollBar:vertical
+{
+    background:transparent;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:4px;
+    padding-right:4px;
+    border-left:1px solid transparent;;
+}
+ 
+QScrollBar::handle:vertical
+{
+    background:#C32E24;
+    border-radius:6px;
+    min-height:60px;
+    border-radius:4px;
+}
+ 
+QScrollBar::handle:vertical:hover
+{
+    background:#C32E24;
+    border-radius:4px;
+}
+ 
+QScrollBar::add-page
+{
+    background:transparent;
+}
+ 
+QScrollBar::sub-page
+{
+    background:transparent;
+}
+ 
+QScrollBar::add-line:vertical
+{
+    background:url(none) center no-repeat;
+}
+ 
+QScrollBar::sub-line:vertical
+{
+    background:url(none) center no-repeat;
+}
+
+QScrollBar:horizontal
+{
+    background:transparent;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:4px;
+    padding-bottom:4px;
+    border-top:1px solid transparent;
+}
+ 
+QScrollBar::handle:horizontal
+{
+    background:#C32E24;
+    border-radius:6px;
+    min-height:60px;
+    border-radius:4px;
+}
+ 
+QScrollBar::handle:horizontal:hover
+{
+    background:#C32E24;
+    border-radius:4px;
+}
+ 
+QScrollBar::add-line:horizontal
+{
+    background:url(none) center no-repeat;
+}
+ 
+QScrollBar::sub-line:horizontal
+{
+    background:url(none) center no-repeat;
+}</string>
+      </property>
+      <row>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>3</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>4</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>5</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>6</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>7</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>8</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>9</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>组件</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>端点</string>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>用户认证</string>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string>http://controller:5000/v3/auth/tokens</string>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>用户端点</string>
+       </property>
+      </item>
+      <item row="1" column="1">
+       <property name="text">
+        <string>http://controller:5000/v3/users</string>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string>网络端点</string>
+       </property>
+      </item>
+      <item row="2" column="1">
+       <property name="text">
+        <string>http://controller:9696/v2.0/networks</string>
+       </property>
+      </item>
+      <item row="3" column="0">
+       <property name="text">
+        <string>子网端点</string>
+       </property>
+      </item>
+      <item row="3" column="1">
+       <property name="text">
+        <string>http://controller:9696/v2.0/subnets</string>
+       </property>
+      </item>
+      <item row="4" column="0">
+       <property name="text">
+        <string>域端点</string>
+       </property>
+      </item>
+      <item row="4" column="1">
+       <property name="text">
+        <string>http://controller:5000/v3/domains</string>
+       </property>
+      </item>
+      <item row="5" column="0">
+       <property name="text">
+        <string>项目端点</string>
+       </property>
+      </item>
+      <item row="5" column="1">
+       <property name="text">
+        <string>http://controller:5000/v3/projects</string>
+       </property>
+      </item>
+      <item row="6" column="0">
+       <property name="text">
+        <string>镜像端点</string>
+       </property>
+      </item>
+      <item row="6" column="1">
+       <property name="text">
+        <string>http://controller:9292/v2/images</string>
+       </property>
+      </item>
+      <item row="7" column="0">
+       <property name="text">
+        <string>云主机类型端点</string>
+       </property>
+      </item>
+      <item row="7" column="1">
+       <property name="text">
+        <string>http://controller:8774/v2/flavors</string>
+       </property>
+      </item>
+      <item row="8" column="0">
+       <property name="text">
+        <string>云主机端点</string>
+       </property>
+      </item>
+      <item row="8" column="1">
+       <property name="text">
+        <string>http://controller:8774/v2/servers</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="stack_user">
+     <widget class="QLabel" name="label_user">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>141</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	text-align: center;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+	background-color: white;
+	color: #C32E24;
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;用户列表&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QTreeWidget" name="tree_users">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>80</y>
+        <width>951</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTreeWidget {border: none;font: 57 9pt &quot;HarmonyOS Sans SC&quot;;}
+QHeaderView::section {font: 57 9pt &quot;HarmonyOS Sans SC&quot;;}
+QTreeWidget::item
+{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+    height:35px;
+    font-size:20px;
+}
+ 
+QTreeWidget::item::hover
+{
+    background-color: #C32E24;
+color:white
+}
+ 
+QTreeWidget::item:selected
+{
+    background: #C32E24;
+}
+
+
+QScrollBar:vertical
+{
+    background:transparent;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:4px;
+    padding-right:4px;
+    border-left:1px solid transparent;;
+}
+ 
+QScrollBar::handle:vertical
+{
+    background:#C32E24;
+    border-radius:6px;
+    min-height:60px;
+    border-radius:4px;
+}
+ 
+QScrollBar::handle:vertical:hover
+{
+    background:#C32E24;
+    border-radius:4px;
+}
+ 
+QScrollBar::add-page
+{
+    background:transparent;
+}
+ 
+QScrollBar::sub-page
+{
+    background:transparent;
+}
+ 
+QScrollBar::add-line:vertical
+{
+    background:url(none) center no-repeat;
+}
+ 
+QScrollBar::sub-line:vertical
+{
+    background:url(none) center no-repeat;
+}
+
+QScrollBar:horizontal
+{
+    background:transparent;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:4px;
+    padding-bottom:4px;
+    border-top:1px solid transparent;
+}
+ 
+QScrollBar::handle:horizontal
+{
+    background:#C32E24;
+    border-radius:6px;
+    min-height:60px;
+    border-radius:4px;
+}
+ 
+QScrollBar::handle:horizontal:hover
+{
+    background:#C32E24;
+    border-radius:4px;
+}
+ 
+QScrollBar::add-line:horizontal
+{
+    background:url(none) center no-repeat;
+}
+ 
+QScrollBar::sub-line:horizontal
+{
+    background:url(none) center no-repeat;
+}</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>序号</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>用户名</string>
+       </property>
+       <property name="font">
+        <font>
+         <kerning>true</kerning>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>链接</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>域名</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>域ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>项目名</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>项目ID</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="pushButton_adduser">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>20</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: #C32E24;
+	color: white;
+	border: none;
+	border-radius: 10px;
+
+}
+
+QPushButton:hover {
+	background-color: white;
+	color: #C32E24;
+}</string>
+      </property>
+      <property name="text">
+       <string>添加用户</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_deluser">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>20</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: #fc624e;
+	color: white;
+	border: none;
+	border-radius: 10px;
+
+}
+
+QPushButton:hover {
+	background-color: white;
+	color: #fc624e;
+}</string>
+      </property>
+      <property name="text">
+       <string>删除用户</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="stack_network">
+     <widget class="QLabel" name="label_network">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>141</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	text-align: center;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+	background-color: white;
+	color: #C32E24;
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;网络列表&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QTreeWidget" name="tree_networks">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>951</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTreeWidget {border: none;font: 57 9pt &quot;HarmonyOS Sans SC&quot;;}
+QHeaderView::section {font: 57 9pt &quot;HarmonyOS Sans SC&quot;;}
+QTreeWidget::item
+{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+    height:35px;
+    font-size:20px;
+}
+ 
+QTreeWidget::item::hover
+{
+    background-color: #C32E24;
+color:white
+}
+ 
+QTreeWidget::item:selected
+{
+    background: #C32E24;
+}
+
+
+QScrollBar:vertical
+{
+    background:transparent;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:4px;
+    padding-right:4px;
+    border-left:1px solid transparent;;
+}
+ 
+QScrollBar::handle:vertical
+{
+    background:#C32E24;
+    border-radius:6px;
+    min-height:60px;
+    border-radius:4px;
+}
+ 
+QScrollBar::handle:vertical:hover
+{
+    background:#C32E24;
+    border-radius:4px;
+}
+ 
+QScrollBar::add-page
+{
+    background:transparent;
+}
+ 
+QScrollBar::sub-page
+{
+    background:transparent;
+}
+ 
+QScrollBar::add-line:vertical
+{
+    background:url(none) center no-repeat;
+}
+ 
+QScrollBar::sub-line:vertical
+{
+    background:url(none) center no-repeat;
+}
+
+QScrollBar:horizontal
+{
+    background:transparent;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:4px;
+    padding-bottom:4px;
+    border-top:1px solid transparent;
+}
+ 
+QScrollBar::handle:horizontal
+{
+    background:#C32E24;
+    border-radius:6px;
+    min-height:60px;
+    border-radius:4px;
+}
+ 
+QScrollBar::handle:horizontal:hover
+{
+    background:#C32E24;
+    border-radius:4px;
+}
+ 
+QScrollBar::add-line:horizontal
+{
+    background:url(none) center no-repeat;
+}
+ 
+QScrollBar::sub-line:horizontal
+{
+    background:url(none) center no-repeat;
+}</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>序号</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>网络名称</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>网络ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>项目ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>供应商网络类型</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>是否共享</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>状态</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>创建于</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="pushButton_addnetwork">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>20</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: #C32E24;
+	color: white;
+	border: none;
+	border-radius: 10px;
+
+}
+
+QPushButton:hover {
+	background-color: white;
+	color: #C32E24;
+}</string>
+      </property>
+      <property name="text">
+       <string>添加网络</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_delnetwork">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>20</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: #fc624e;
+	color: white;
+	border: none;
+	border-radius: 10px;
+
+}
+
+QPushButton:hover {
+	background-color: white;
+	color: #fc624e;
+}</string>
+      </property>
+      <property name="text">
+       <string>删除网络</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_addsubnet">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>20</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: #ffc8aa;
+	color: white;
+	border: none;
+	border-radius: 10px;
+
+}
+
+QPushButton:hover {
+	background-color: white;
+	color: #ffc8aa;
+}</string>
+      </property>
+      <property name="text">
+       <string>添加子网</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="stack_image">
+     <widget class="QPushButton" name="pushButton_delimage">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>20</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: #fc624e;
+	color: white;
+	border: none;
+	border-radius: 10px;
+
+}
+
+QPushButton:hover {
+	background-color: white;
+	color: #fc624e;
+}</string>
+      </property>
+      <property name="text">
+       <string>删除镜像</string>
+      </property>
+     </widget>
+     <widget class="QTreeWidget" name="tree_images">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>951</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTreeWidget {border: none;font: 57 9pt &quot;HarmonyOS Sans SC&quot;;}
+QHeaderView::section {font: 57 9pt &quot;HarmonyOS Sans SC&quot;;}
+QTreeWidget::item
+{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+    height:35px;
+    font-size:20px;
+}
+ 
+QTreeWidget::item::hover
+{
+    background-color: #C32E24;
+color:white
+}
+ 
+QTreeWidget::item:selected
+{
+    background: #C32E24;
+}
+
+
+QScrollBar:vertical
+{
+    background:transparent;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:4px;
+    padding-right:4px;
+    border-left:1px solid transparent;;
+}
+ 
+QScrollBar::handle:vertical
+{
+    background:#C32E24;
+    border-radius:6px;
+    min-height:60px;
+    border-radius:4px;
+}
+ 
+QScrollBar::handle:vertical:hover
+{
+    background:#C32E24;
+    border-radius:4px;
+}
+ 
+QScrollBar::add-page
+{
+    background:transparent;
+}
+ 
+QScrollBar::sub-page
+{
+    background:transparent;
+}
+ 
+QScrollBar::add-line:vertical
+{
+    background:url(none) center no-repeat;
+}
+ 
+QScrollBar::sub-line:vertical
+{
+    background:url(none) center no-repeat;
+}
+
+QScrollBar:horizontal
+{
+    background:transparent;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:4px;
+    padding-bottom:4px;
+    border-top:1px solid transparent;
+}
+ 
+QScrollBar::handle:horizontal
+{
+    background:#C32E24;
+    border-radius:6px;
+    min-height:60px;
+    border-radius:4px;
+}
+ 
+QScrollBar::handle:horizontal:hover
+{
+    background:#C32E24;
+    border-radius:4px;
+}
+ 
+QScrollBar::add-line:horizontal
+{
+    background:url(none) center no-repeat;
+}
+ 
+QScrollBar::sub-line:horizontal
+{
+    background:url(none) center no-repeat;
+}</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>序号</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>镜像名称</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>镜像ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>镜像大小</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>容器格式</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>磁盘格式</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>状态</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>创建时间</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="pushButton_addimage">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>20</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: #C32E24;
+	color: white;
+	border: none;
+	border-radius: 10px;
+
+}
+
+QPushButton:hover {
+	background-color: white;
+	color: #C32E24;
+}</string>
+      </property>
+      <property name="text">
+       <string>创建镜像</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_images">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>141</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	text-align: center;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+	background-color: white;
+	color: #C32E24;
+}</string>
+      </property>
+      <property name="text">
+       <string>镜像列表</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="stack_server">
+     <widget class="QLabel" name="label_servers">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>146</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	text-align: center;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+	background-color: white;
+	color: #C32E24;
+}</string>
+      </property>
+      <property name="text">
+       <string>云主机列表</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_addservers">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>20</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: #C32E24;
+	color: white;
+	border: none;
+	border-radius: 10px;
+
+}
+
+QPushButton:hover {
+	background-color: white;
+	color: #C32E24;
+}</string>
+      </property>
+      <property name="text">
+       <string>创建云主机</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_delservers">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>20</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: #fc624e;
+	color: white;
+	border: none;
+	border-radius: 10px;
+
+}
+
+QPushButton:hover {
+	background-color: white;
+	color: #fc624e;
+}</string>
+      </property>
+      <property name="text">
+       <string>删除云主机</string>
+      </property>
+     </widget>
+     <widget class="QTreeWidget" name="tree_servers">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>951</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTreeWidget {border: none;font: 57 9pt &quot;HarmonyOS Sans SC&quot;;}
+QHeaderView::section {font: 57 9pt &quot;HarmonyOS Sans SC&quot;;}
+QTreeWidget::item
+{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+    height:35px;
+    font-size:20px;
+}
+ 
+QTreeWidget::item::hover
+{
+    background-color: #C32E24;
+color:white
+}
+ 
+QTreeWidget::item:selected
+{
+    background: #C32E24;
+}
+
+
+QScrollBar:vertical
+{
+    background:transparent;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:4px;
+    padding-right:4px;
+    border-left:1px solid transparent;;
+}
+ 
+QScrollBar::handle:vertical
+{
+    background:#C32E24;
+    border-radius:6px;
+    min-height:60px;
+    border-radius:4px;
+}
+ 
+QScrollBar::handle:vertical:hover
+{
+    background:#C32E24;
+    border-radius:4px;
+}
+ 
+QScrollBar::add-page
+{
+    background:transparent;
+}
+ 
+QScrollBar::sub-page
+{
+    background:transparent;
+}
+ 
+QScrollBar::add-line:vertical
+{
+    background:url(none) center no-repeat;
+}
+ 
+QScrollBar::sub-line:vertical
+{
+    background:url(none) center no-repeat;
+}
+
+QScrollBar:horizontal
+{
+    background:transparent;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:4px;
+    padding-bottom:4px;
+    border-top:1px solid transparent;
+}
+ 
+QScrollBar::handle:horizontal
+{
+    background:#C32E24;
+    border-radius:6px;
+    min-height:60px;
+    border-radius:4px;
+}
+ 
+QScrollBar::handle:horizontal:hover
+{
+    background:#C32E24;
+    border-radius:4px;
+}
+ 
+QScrollBar::add-line:horizontal
+{
+    background:url(none) center no-repeat;
+}
+ 
+QScrollBar::sub-line:horizontal
+{
+    background:url(none) center no-repeat;
+}</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>序号</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>云主机名称</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>云主机ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>IP地址</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>云主机类型</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>状态</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>可用域</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>密钥对</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>创建时间</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="pushButton_refresh">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>20</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: #ffc8aa;
+	color: white;
+	border: none;
+	border-radius: 10px;
+
+}
+
+QPushButton:hover {
+	background-color: white;
+	color: #ffc8aa;
+}</string>
+      </property>
+      <property name="text">
+       <string>刷新</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="stack_flavor">
+     <widget class="QPushButton" name="pushButton_delflavors">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>20</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: #fc624e;
+	color: white;
+	border: none;
+	border-radius: 10px;
+
+}
+
+QPushButton:hover {
+	background-color: white;
+	color: #fc624e;
+}</string>
+      </property>
+      <property name="text">
+       <string>删除云主机类型</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_flavors">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>141</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	text-align: center;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+	background-color: white;
+	color: #C32E24;
+}</string>
+      </property>
+      <property name="text">
+       <string>云主机类型列表</string>
+      </property>
+     </widget>
+     <widget class="QTreeWidget" name="tree_flavors">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>951</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTreeWidget {border: none;font: 57 9pt &quot;HarmonyOS Sans SC&quot;;}
+QHeaderView::section {font: 57 9pt &quot;HarmonyOS Sans SC&quot;;}
+QTreeWidget::item
+{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+    height:35px;
+    font-size:20px;
+}
+ 
+QTreeWidget::item::hover
+{
+    background-color: #C32E24;
+color:white
+}
+ 
+QTreeWidget::item:selected
+{
+    background: #C32E24;
+}
+
+
+QScrollBar:vertical
+{
+    background:transparent;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:4px;
+    padding-right:4px;
+    border-left:1px solid transparent;;
+}
+ 
+QScrollBar::handle:vertical
+{
+    background:#C32E24;
+    border-radius:6px;
+    min-height:60px;
+    border-radius:4px;
+}
+ 
+QScrollBar::handle:vertical:hover
+{
+    background:#C32E24;
+    border-radius:4px;
+}
+ 
+QScrollBar::add-page
+{
+    background:transparent;
+}
+ 
+QScrollBar::sub-page
+{
+    background:transparent;
+}
+ 
+QScrollBar::add-line:vertical
+{
+    background:url(none) center no-repeat;
+}
+ 
+QScrollBar::sub-line:vertical
+{
+    background:url(none) center no-repeat;
+}
+
+QScrollBar:horizontal
+{
+    background:transparent;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:4px;
+    padding-bottom:4px;
+    border-top:1px solid transparent;
+}
+ 
+QScrollBar::handle:horizontal
+{
+    background:#C32E24;
+    border-radius:6px;
+    min-height:60px;
+    border-radius:4px;
+}
+ 
+QScrollBar::handle:horizontal:hover
+{
+    background:#C32E24;
+    border-radius:4px;
+}
+ 
+QScrollBar::add-line:horizontal
+{
+    background:url(none) center no-repeat;
+}
+ 
+QScrollBar::sub-line:horizontal
+{
+    background:url(none) center no-repeat;
+}</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>序号</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>云主机类型名称</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>云主机类型ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>CPU数量</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>内存大小</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>磁盘大小</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>临时存储大小</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Swap磁盘</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>RX/TX因子</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="pushButton_addflavors">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>20</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: #C32E24;
+	color: white;
+	border: none;
+	border-radius: 10px;
+
+}
+
+QPushButton:hover {
+	background-color: white;
+	color: #C32E24;
+}</string>
+      </property>
+      <property name="text">
+       <string>创建云主机类型</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

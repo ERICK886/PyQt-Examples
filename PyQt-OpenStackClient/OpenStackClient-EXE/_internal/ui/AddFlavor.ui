@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddFlavor</class>
+ <widget class="QDialog" name="AddFlavor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>421</width>
+    <height>507</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {background-color: white;}</string>
+  </property>
+  <widget class="QLabel" name="label_addimagetitle">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>20</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 25px;
+}</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;创建云主机类型&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_flavorname">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>类型名称:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_add_flavorname">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>100</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;
+}
+                        </string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_add_flavorid">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>140</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;
+}
+                        </string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_flavorid">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>140</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>类型ID：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_flavorvcpu">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>180</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>VCPU数量：</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_add_flavorvcpu">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>180</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;}
+QSpinBox::up-button { subcontrol-origin: border; subcontrol-position: top right; width: 20px; height: 16px; image: url('resources/img/up-arrow.png');}
+QSpinBox::down-button { subcontrol-origin: border; subcontrol-position: bottom right; width: 20px; height: 16px; image: url('resources/img/down-arrow.png');}</string>
+   </property>
+   <property name="maximum">
+    <number>99999</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_min_disk_dw">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>180</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>个</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_add_flavorram">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>220</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;}
+QSpinBox::up-button { subcontrol-origin: border; subcontrol-position: top right; width: 20px; height: 16px; image: url('resources/img/up-arrow.png');}
+QSpinBox::down-button { subcontrol-origin: border; subcontrol-position: bottom right; width: 20px; height: 16px; image: url('resources/img/down-arrow.png');}</string>
+   </property>
+   <property name="maximum">
+    <number>99999</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_min_disk_dw_2">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>220</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>MB</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_flavorram">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>220</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>内存：</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_add_flavordisk">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>260</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;}
+QSpinBox::up-button { subcontrol-origin: border; subcontrol-position: top right; width: 20px; height: 16px; image: url('resources/img/up-arrow.png');}
+QSpinBox::down-button { subcontrol-origin: border; subcontrol-position: bottom right; width: 20px; height: 16px; image: url('resources/img/down-arrow.png');}</string>
+   </property>
+   <property name="maximum">
+    <number>99999</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_min_disk_dw_3">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>260</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>GB</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_flavordisk">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>260</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>根磁盘：</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_add_flavorephemeral">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>300</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;}
+QSpinBox::up-button { subcontrol-origin: border; subcontrol-position: top right; width: 20px; height: 16px; image: url('resources/img/up-arrow.png');}
+QSpinBox::down-button { subcontrol-origin: border; subcontrol-position: bottom right; width: 20px; height: 16px; image: url('resources/img/down-arrow.png');}</string>
+   </property>
+   <property name="maximum">
+    <number>99999</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_min_disk_dw_4">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>300</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>GB</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_flavorex">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>300</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>临时磁盘：</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_add_flavorswap">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>340</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;}
+QSpinBox::up-button { subcontrol-origin: border; subcontrol-position: top right; width: 20px; height: 16px; image: url('resources/img/up-arrow.png');}
+QSpinBox::down-button { subcontrol-origin: border; subcontrol-position: bottom right; width: 20px; height: 16px; image: url('resources/img/down-arrow.png');}</string>
+   </property>
+   <property name="maximum">
+    <number>99999</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_min_disk_dw_5">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>340</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>MB</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_flavorswap">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>340</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Swap磁盘：</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_add_flavorrxtx">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>380</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;}
+QSpinBox::up-button { subcontrol-origin: border; subcontrol-position: top right; width: 20px; height: 16px; image: url('resources/img/up-arrow.png');}
+QSpinBox::down-button { subcontrol-origin: border; subcontrol-position: bottom right; width: 20px; height: 16px; image: url('resources/img/down-arrow.png');}</string>
+   </property>
+   <property name="maximum">
+    <number>99999</number>
+   </property>
+   <property name="value">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_flavorrxtx">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>380</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>RX/TX因子：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_add_addflavor">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>440</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: #C32E24;
+	color: white;
+	border: none;
+	border-radius: 10px;
+
+}
+
+QPushButton:hover {
+	background-color: white;
+	color: #C32E24;
+}</string>
+   </property>
+   <property name="text">
+    <string>创建</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

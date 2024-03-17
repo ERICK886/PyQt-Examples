@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1120</width>
+    <height>740</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	background-color: white;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1120</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>关于</string>
+    </property>
+    <addaction name="action_OpenStack"/>
+    <addaction name="action_OpenStackDocs"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>作者</string>
+    </property>
+    <addaction name="action_CSDN"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_OpenStack">
+   <property name="text">
+    <string>OpenStack</string>
+   </property>
+  </action>
+  <action name="action_OpenStackDocs">
+   <property name="text">
+    <string>OpenStackDocs</string>
+   </property>
+  </action>
+  <action name="action_CSDN">
+   <property name="text">
+    <string>CSDN</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

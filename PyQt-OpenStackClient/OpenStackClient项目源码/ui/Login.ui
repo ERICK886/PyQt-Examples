@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QWidget" name="Login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1120</width>
+    <height>740</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {background-color:white;}</string>
+  </property>
+  <widget class="QFrame" name="frame_login">
+   <property name="geometry">
+    <rect>
+     <x>531</x>
+     <y>21</y>
+     <width>591</width>
+     <height>691</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {background-color:white;}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_ins">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>150</y>
+      <width>321</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+                            font-size: 30px;
+                            }
+                        </string>
+    </property>
+    <property name="text">
+     <string>连接到你的OpenStack</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_password">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>370</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+                            font-size: 25px;
+                            }
+                        </string>
+    </property>
+    <property name="text">
+     <string>密 码:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_username">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>310</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+      <pointsize>-1</pointsize>
+      <weight>7</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;
+}
+                        </string>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_title">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>70</y>
+      <width>441</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+font-size: 50px;
+text-align: center;
+}
+                        </string>
+    </property>
+    <property name="text">
+     <string>OpenStack Client</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_password">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>370</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+      <pointsize>-1</pointsize>
+      <weight>7</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+                            border: 1px solid #ddd;
+                            box-shadow: none;
+                            color: #333;
+                            font-size: 15px;
+                            border-radius: 10px;
+                            }
+                        </string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_exit">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>550</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+                            border-radius: 10px;
+                            border: #69a9ff 1px solid;
+                            font: 9qt '微软雅黑';
+                            background-color: #5c5c5c;
+                            font-size: 20px;
+                            color: white;
+                            }
+
+                            QPushButton:hover {
+                            background-color: #cccccc;
+                            }
+                        </string>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ip">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>250</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+                            font-size: 25px;
+                            }
+                        </string>
+    </property>
+    <property name="text">
+     <string>IP地址:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_demo">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>430</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+                            font-size: 25px;
+                            }
+                        </string>
+    </property>
+    <property name="text">
+     <string>域:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_link">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>550</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+                            border-radius: 10px;
+                            border: #69a9ff 1px solid;
+                            font: 9qt '微软雅黑';
+                            background-color: #C32E24;
+                            font-size: 20px;
+                            color: white;
+                            }
+
+                            QPushButton:hover {
+                            background-color: #fc624e;
+                            }
+                        </string>
+    </property>
+    <property name="text">
+     <string>连接</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_username">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>310</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+                            font-size: 25px;
+                            }
+                        </string>
+    </property>
+    <property name="text">
+     <string>用户名:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_ip">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>250</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+                            border: 1px solid #ddd;
+                            box-shadow: none;
+                            color: #333;
+                            font-size: 15px;
+                            border-radius: 10px;
+font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+                            }
+                        </string>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_project">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>490</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+                            font-size: 25px;
+                            }
+                        </string>
+    </property>
+    <property name="text">
+     <string>项目:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_userdomain">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>430</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+      <pointsize>-1</pointsize>
+      <weight>7</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;
+}
+                        </string>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_userproject">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>490</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+      <pointsize>-1</pointsize>
+      <weight>7</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;
+}
+                        </string>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_logo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>20</y>
+     <width>531</width>
+     <height>691</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {background-color:white;}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>240</y>
+      <width>461</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	background: url(resources/img/logo.png) no-repeat center;
+	background-size: contain;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+                        </string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

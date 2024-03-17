@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddImage</class>
+ <widget class="QDialog" name="AddImage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>423</width>
+    <height>547</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {background-color: white;}</string>
+  </property>
+  <widget class="QLabel" name="label_add_imagename">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>100</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>镜像名称:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_addimagetitle">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>20</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 25px;
+}</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;创建镜像&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_add_imagename">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>100</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;
+}
+                        </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_add_addimage">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>480</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: #C32E24;
+	color: white;
+	border: none;
+	border-radius: 10px;
+
+}
+
+QPushButton:hover {
+	background-color: white;
+	color: #C32E24;
+}</string>
+   </property>
+   <property name="text">
+    <string>创建</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_add_imagedesc">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>140</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;
+}
+                        </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_imagedesc">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>140</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>镜像描述:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_disk_format">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>180</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>镜像格式:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_min_disk">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>220</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>最小磁盘:</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_add_min_disk">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>220</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;}
+QSpinBox::up-button { subcontrol-origin: border; subcontrol-position: top right; width: 20px; height: 16px; image: url('resources/img/up-arrow.png');}
+QSpinBox::down-button { subcontrol-origin: border; subcontrol-position: bottom right; width: 20px; height: 16px; image: url('resources/img/down-arrow.png');}</string>
+   </property>
+   <property name="maximum">
+    <number>99999</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_min_ram">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>260</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>最小内存:</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_add_min_ram">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>260</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;}
+QSpinBox::up-button { subcontrol-origin: border; subcontrol-position: top right; width: 20px; height: 16px; image: url('resources/img/up-arrow.png');}
+QSpinBox::down-button { subcontrol-origin: border; subcontrol-position: bottom right; width: 20px; height: 16px; image: url('resources/img/down-arrow.png');}</string>
+   </property>
+   <property name="maximum">
+    <number>99999</number>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_add_private">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>310</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+    background-color: #ffffff;
+    color: #C32E24;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 2px;
+	font-size: 18px;
+}
+
+QRadioButton::indicator {
+	 width:18px;
+	 height: 18px;
+     background-color: #ffffff;
+	 border: 1px solid #ddd;
+	border-radius: 10px;
+}
+
+QRadioButton::indicator:checked {
+     border-image: url('resources/img/selected.png')
+}</string>
+   </property>
+   <property name="text">
+    <string>私有的</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_add_shared">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>340</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+    background-color: #ffffff;
+    color: #C32E24;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 2px;
+	font-size: 18px;
+}
+
+QRadioButton::indicator {
+	 width:18px;
+	 height: 18px;
+     background-color: #ffffff;
+	 border: 1px solid #ddd;
+	border-radius: 10px;
+}
+
+QRadioButton::indicator:checked {
+     border-image: url('resources/img/selected.png')
+}</string>
+   </property>
+   <property name="text">
+    <string>共享的</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_add_public">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>340</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+    background-color: #ffffff;
+    color: #C32E24;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 2px;
+	font-size: 18px;
+}
+
+QRadioButton::indicator {
+	 width:18px;
+	 height: 18px;
+     background-color: #ffffff;
+	 border: 1px solid #ddd;
+	border-radius: 10px;
+}
+
+QRadioButton::indicator:checked {
+     border-image: url('resources/img/selected.png')
+}</string>
+   </property>
+   <property name="text">
+    <string>公有</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_visibility">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>320</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>可见性:</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_add_add_ifprotected">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>380</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+    background-color: #ffffff;
+    color: #C32E24;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 2px;
+	font-size: 18px;
+}
+
+QCheckBox::indicator {
+	 width:18px;
+	 height: 18px;
+     background-color: #ffffff;
+	 border: 1px solid #ddd;
+     border-radius: 4px;
+}
+
+QCheckBox::indicator:checked {
+     border-image: url('resources/img/checked.png');
+	border: 1px solid #ddd;
+}</string>
+   </property>
+   <property name="text">
+    <string>开启</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_protected">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>380</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>受保护:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_add_imagefile">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>420</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	background-color: #fff;
+	color: #C32E24;
+	font-size: 15px;
+	border-radius: 10px;}
+
+QPushButton:hover {
+	background-color: #C32E24;
+	color: #fff;
+}</string>
+   </property>
+   <property name="text">
+    <string>选择镜像文件</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_add_social">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>310</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+    background-color: #ffffff;
+    color: #C32E24;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 2px;
+	font-size: 18px;
+}
+
+QRadioButton::indicator {
+	 width:18px;
+	 height: 18px;
+     background-color: #ffffff;
+	 border: 1px solid #ddd;
+	border-radius: 10px;
+}
+
+QRadioButton::indicator:checked {
+     border-image: url('resources/img/selected.png')
+}</string>
+   </property>
+   <property name="text">
+    <string>社区</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_add_disk_format">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>180</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;	
+	font-size: 15px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+QComboBox::down-arrow {
+    image: url('resources/img/down-arrow.png'); 
+	width: 15px;
+	height: 15px
+}
+
+QComboBox::drop-down{
+    border:0;           
+    min-width: 40px; 
+}
+
+QScrollBar:vertical {
+    background: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-left: 1px solid transparent;;
+}
+
+QScrollBar::handle:vertical {
+    background: #C32E24;
+    border-radius: 6px;
+    min-height: 60px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #C32E24;
+    border-radius: 4px;
+}
+
+QScrollBar::add-page {
+    background: transparent;
+}
+
+QScrollBar::sub-page {
+    background: transparent;
+}
+
+QScrollBar::add-line:vertical {
+    background: url(none) center no-repeat;
+}
+
+QScrollBar::sub-line:vertical {
+    background: url(none) center no-repeat;
+}
+                        </string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_add_imagefile">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>420</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;
+}
+                        </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_min_disk_dw">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>220</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>GB</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_min_ram_dw">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>260</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>MB</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

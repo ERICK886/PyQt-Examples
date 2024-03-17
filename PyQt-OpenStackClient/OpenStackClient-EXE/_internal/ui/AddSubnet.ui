@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddSubnet</class>
+ <widget class="QDialog" name="AddSubnet">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>424</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>424</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>424</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {background-color: white;}</string>
+  </property>
+  <widget class="QLabel" name="label_add_subnetname">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>70</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>子网名称:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_add_subnetname">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>70</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;
+}
+                        </string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_add_subnetipversion">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>150</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;	
+	font-size: 15px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+QComboBox::down-arrow {
+    image: url('resources/img/down-arrow.png'); 
+	width: 15px;
+	height: 15px
+}
+
+QComboBox::drop-down{
+    border:0;           
+    min-width: 40px; 
+}
+                        </string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_add_subnetifgateway">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>230</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+    background-color: #ffffff;
+    color: #C32E24;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 2px;
+	font-size: 18px;
+}
+
+QCheckBox::indicator {
+	 width:18px;
+	 height: 18px;
+     background-color: #ffffff;
+	 border: 1px solid #ddd;
+     border-radius: 4px;
+}
+
+QCheckBox::indicator:checked {
+     border-image: url('resources/img/checked.png');
+	border: 1px solid #ddd;
+}</string>
+   </property>
+   <property name="text">
+    <string>禁用网关</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_addnetworktypetitle">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>10</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 25px;
+}</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;创建子网&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_add_subnetcidr">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>110</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;
+}
+                        </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_subnetcidr">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>110</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>网络地址:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_subnetipversion">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>150</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>IP版本:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_subnetgetwayip">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>190</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>网关IP:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_add_subnetgatewayip">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>190</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;
+}
+                        </string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_subnetipool">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>270</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>分配IP池:</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_add_subnetipool">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>270</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit {font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;}</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_add_subnetdns">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>330</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit {font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_subnetdns">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>330</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>DNS:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_subnetroute">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>390</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>主机路由:</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_add_subnetroute">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>390</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit {font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_add_addsubnet">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>470</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: #C32E24;
+	color: white;
+	border: none;
+	border-radius: 10px;
+
+}
+
+QPushButton:hover {
+	background-color: white;
+	color: #C32E24;
+}</string>
+   </property>
+   <property name="text">
+    <string>创建</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_add_subnetifdhcp">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>230</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+    background-color: #ffffff;
+    color: #C32E24;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 2px;
+	font-size: 18px;
+}
+
+QCheckBox::indicator {
+	 width:18px;
+	 height: 18px;
+     background-color: #ffffff;
+	 border: 1px solid #ddd;
+     border-radius: 4px;
+}
+
+QCheckBox::indicator:checked {
+     border-image: url('resources/img/checked.png');
+	border: 1px solid #ddd;
+}</string>
+   </property>
+   <property name="text">
+    <string>激活DHCP</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

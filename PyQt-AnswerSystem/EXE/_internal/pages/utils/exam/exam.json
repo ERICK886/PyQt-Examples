@@ -1,0 +1,138 @@
+{
+    "exam": {
+        "1": {
+            "question": "A",
+            "score": 4
+        },
+        "2": {
+            "question": "B",
+            "score": 4
+        },
+        "3": {
+            "question": "A",
+            "score": 4
+        },
+        "4": {
+            "question": "A",
+            "score": 4
+        },
+        "5": {
+            "question": "D",
+            "score": 4
+        },
+        "6": {
+            "question": "C",
+            "score": 4
+        },
+        "7": {
+            "question": "C",
+            "score": 4
+        },
+        "8": {
+            "question": "C",
+            "score": 4
+        },
+        "9": {
+            "question": "B",
+            "score": 4
+        },
+        "10": {
+            "question": "A",
+            "score": 4
+        },
+        "11": {
+            "question": "A",
+            "score": 4
+        },
+        "12": {
+            "question": "D",
+            "score": 4
+        },
+        "13": {
+            "question": "A",
+            "score": 4
+        },
+        "14": {
+            "question": "B",
+            "score": 4
+        },
+        "15": {
+            "question": "A",
+            "score": 4
+        },
+        "16": {
+            "question": [
+                "A",
+                "B"
+            ],
+            "score": 4
+        },
+        "17": {
+            "question": [
+                "A",
+                "B",
+                "C"
+            ],
+            "score": 4
+        },
+        "18": {
+            "question": [
+                "A",
+                "C"
+            ],
+            "score": 4
+        },
+        "19": {
+            "question": [
+                "A",
+                "C"
+            ],
+            "score": 4
+        },
+        "20": {
+            "question": [
+                "C",
+                "D"
+            ],
+            "score": 4
+        },
+        "21": {
+            "question": [
+                "A",
+                "B",
+                "D"
+            ],
+            "score": 4
+        },
+        "22": {
+            "question": [
+                "B",
+                "C"
+            ],
+            "score": 4
+        },
+        "23": {
+            "question": [
+                "A",
+                "C"
+            ],
+            "score": 4
+        },
+        "24": {
+            "question": [
+                "A",
+                "C"
+            ],
+            "score": 4
+        },
+        "25": {
+            "question": [
+                "A",
+                "B",
+                "C"
+            ],
+            "score": 0
+        }
+    },
+    "score": 0
+}

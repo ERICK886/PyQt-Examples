@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddServer</class>
+ <widget class="QDialog" name="AddServer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>441</width>
+    <height>378</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {background-color: white;}
+</string>
+  </property>
+  <widget class="QLabel" name="label_addservertitle">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>10</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 25px;
+}</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;创建云主机&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_servername">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>80</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>实例名称:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_add_servername">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>80</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+	border-radius: 10px;
+}
+                        </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_serverzone">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>120</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>可用域:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_add_serverzone">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>120</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;	
+	font-size: 15px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+QComboBox::down-arrow {
+    image: url('resources/img/down-arrow.png'); 
+	width: 15px;
+	height: 15px
+}
+
+QComboBox::drop-down{
+    border:0;           
+    min-width: 40px; 
+}
+
+QScrollBar:vertical {
+    background: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-left: 1px solid transparent;;
+}
+
+QScrollBar::handle:vertical {
+    background: #C32E24;
+    border-radius: 6px;
+    min-height: 60px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #C32E24;
+    border-radius: 4px;
+}
+
+QScrollBar::add-page {
+    background: transparent;
+}
+
+QScrollBar::sub-page {
+    background: transparent;
+}
+
+QScrollBar::add-line:vertical {
+    background: url(none) center no-repeat;
+}
+
+QScrollBar::sub-line:vertical {
+    background: url(none) center no-repeat;
+}
+                        </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_add_addserver">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>300</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	background-color: #C32E24;
+	color: white;
+	border: none;
+	border-radius: 10px;
+
+}
+
+QPushButton:hover {
+	background-color: white;
+	color: #C32E24;
+}</string>
+   </property>
+   <property name="text">
+    <string>创建</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_serverimg">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>160</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>镜像:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_add_serverimage">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>160</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;	
+	font-size: 15px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+QComboBox::down-arrow {
+    image: url('resources/img/down-arrow.png'); 
+	width: 15px;
+	height: 15px
+}
+
+QComboBox::drop-down{
+    border:0;           
+    min-width: 40px; 
+}
+
+QScrollBar:vertical {
+    background: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-left: 1px solid transparent;;
+}
+
+QScrollBar::handle:vertical {
+    background: #C32E24;
+    border-radius: 6px;
+    min-height: 60px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #C32E24;
+    border-radius: 4px;
+}
+
+QScrollBar::add-page {
+    background: transparent;
+}
+
+QScrollBar::sub-page {
+    background: transparent;
+}
+
+QScrollBar::add-line:vertical {
+    background: url(none) center no-repeat;
+}
+
+QScrollBar::sub-line:vertical {
+    background: url(none) center no-repeat;
+}
+                        </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_serverflavor">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>200</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>云主机类型:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_add_serverflavor">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>200</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;	
+	font-size: 15px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+QComboBox::down-arrow {
+    image: url('resources/img/down-arrow.png'); 
+	width: 15px;
+	height: 15px
+}
+
+QComboBox::drop-down{
+    border:0;           
+    min-width: 40px; 
+}
+
+QScrollBar:vertical {
+    background: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-left: 1px solid transparent;;
+}
+
+QScrollBar::handle:vertical {
+    background: #C32E24;
+    border-radius: 6px;
+    min-height: 60px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #C32E24;
+    border-radius: 4px;
+}
+
+QScrollBar::add-page {
+    background: transparent;
+}
+
+QScrollBar::sub-page {
+    background: transparent;
+}
+
+QScrollBar::add-line:vertical {
+    background: url(none) center no-repeat;
+}
+
+QScrollBar::sub-line:vertical {
+    background: url(none) center no-repeat;
+}
+                        </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_servernetwork">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>240</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #C32E24;
+	font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>网络选择:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_add_servernetwork">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>240</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+font: 57 9pt &quot;HarmonyOS Sans SC&quot;;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	color: #333;	
+	font-size: 15px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+QComboBox::down-arrow {
+    image: url('resources/img/down-arrow.png'); 
+	width: 15px;
+	height: 15px
+}
+
+QComboBox::drop-down{
+    border:0;           
+    min-width: 40px; 
+}
+
+QScrollBar:vertical {
+    background: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-left: 1px solid transparent;;
+}
+
+QScrollBar::handle:vertical {
+    background: #C32E24;
+    border-radius: 6px;
+    min-height: 60px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #C32E24;
+    border-radius: 4px;
+}
+
+QScrollBar::add-page {
+    background: transparent;
+}
+
+QScrollBar::sub-page {
+    background: transparent;
+}
+
+QScrollBar::add-line:vertical {
+    background: url(none) center no-repeat;
+}
+
+QScrollBar::sub-line:vertical {
+    background: url(none) center no-repeat;
+}
+                        </string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
